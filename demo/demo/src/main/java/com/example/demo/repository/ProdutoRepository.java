@@ -10,4 +10,9 @@ import com.example.demo.domain.Produto;
 public interface ProdutoRepository extends JpaRepository<Produto, Integer>{
 
     Optional<List<Produto>> findByNome(String nome);
+    static Produto findByID(Integer id) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+    void save(Optional<Produto> p1);
 }
